@@ -1,6 +1,6 @@
 # Sales Reporting Data Dictionary
 
-**Fact:** `fact_sales` — transaction-level sales events.
+**Fact:** `fact_sales`, transaction-level sales events.
 
 **Dimensions:** `dim_customers`, `dim_products`, `dim_salespersons`, `dim_branches`, `dim_regions`, `dim_calendar`.
 
