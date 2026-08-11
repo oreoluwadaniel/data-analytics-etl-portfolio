@@ -1,0 +1,14 @@
+Rule_ID,Rule_Name,Field,Total_Records,Pass_Count,Fail_Count,Pass_Rate_%,Fail_Rate_%,Severity,Status
+DQ-01,Duplicate Order_ID,Order_ID,75000,74978,22,99.97,0.03,Critical,FAIL
+DQ-02,Null Order_Date,Order_Date,75000,75000,0,100.0,0.0,Critical,PASS
+DQ-03,Future Order_Date,Order_Date,75000,74265,735,99.02,0.98,High,FAIL
+DQ-04,Zero or Negative Quantity,Quantity,75000,74330,670,99.11,0.89,High,FAIL
+DQ-05,Zero or Negative Unit Price,Unit_Price,75000,75000,0,100.0,0.0,High,PASS
+DQ-06,Discount > 50%,Discount_%,75000,74240,760,98.99,1.01,Medium,FAIL
+DQ-07,Null Salesperson,Salesperson,75000,74494,506,99.33,0.67,High,FAIL
+DQ-08,Null Customer Name,Customer_Name,75000,74462,538,99.28,0.72,High,FAIL
+DQ-09,Null Product Name,Product_Name,75000,74527,473,99.37,0.63,High,FAIL
+DQ-10,Invalid Region,Region,75000,74620,380,99.49,0.51,High,FAIL
+DQ-11,Invalid Payment Method,Payment_Method,75000,74617,383,99.49,0.51,Medium,FAIL
+DQ-12,Leading/Trailing Spaces in Customer,Customer_Name,75000,72765,2235,97.02,2.98,Low,FAIL
+DQ-13,Invalid Currency Code,Currency,75000,73767,1233,98.36,1.64,Low,FAIL

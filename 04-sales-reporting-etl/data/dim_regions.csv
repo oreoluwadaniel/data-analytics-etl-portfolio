@@ -1,0 +1,6 @@
+Region_ID,Region,Zone,State,Branch_Count,Branch_Tier
+RGN-01,Lagos,South West,Lagos,4,Tier 1
+RGN-02,Abuja,North Central,FCT,3,Tier 1
+RGN-03,Kano,North West,Kano,2,Tier 2
+RGN-04,Port Harcourt,South South,Rivers,2,Tier 2
+RGN-05,Ibadan,South West,Oyo,2,Tier 2

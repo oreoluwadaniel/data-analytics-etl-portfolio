@@ -1,0 +1,26 @@
+Salesperson_ID,Salesperson_Name,First_Name,Last_Name,Region,Branch_ID,Job_Title,Email,Phone,Hire_Date,Is_Active,Target_Monthly
+SP-001,Olumide Fashola,Olumide,Fashola,Lagos,BRN-01,Senior Sales Executive,olumide.fashola@trademark-ng.com,09071239603,2019-04-08,Yes,750000
+SP-002,Adaeze Okonkwo,Adaeze,Okonkwo,Lagos,BRN-01,Sales Executive,adaeze.okonkwo@trademark-ng.com,08056227720,2019-07-30,Yes,2000000
+SP-003,Tunde Adesanya,Tunde,Adesanya,Lagos,BRN-01,Sales Executive,tunde.adesanya@trademark-ng.com,09075764423,2018-09-09,No,1500000
+SP-004,Chiamaka Nwachukwu,Chiamaka,Nwachukwu,Lagos,BRN-01,Account Manager,chiamaka.nwachukwu@trademark-ng.com,08122354527,2019-12-29,Yes,500000
+SP-005,Segun Lawal,Segun,Lawal,Lagos,BRN-01,Sales Executive,segun.lawal@trademark-ng.com,08165263544,2020-11-04,Yes,750000
+SP-006,Biodun Ogunleye,Biodun,Ogunleye,Lagos,BRN-01,Sales Representative,biodun.ogunleye@trademark-ng.com,08034837587,2022-03-24,Yes,500000
+SP-007,Kemi Adeyemi,Kemi,Adeyemi,Lagos,BRN-01,Sales Representative,kemi.adeyemi@trademark-ng.com,08067512733,2018-10-04,Yes,1500000
+SP-008,Rotimi Balogun,Rotimi,Balogun,Lagos,BRN-01,Sales Executive,rotimi.balogun@trademark-ng.com,08058239919,2019-09-25,Yes,750000
+SP-009,Fatima Abubakar,Fatima,Abubakar,Abuja,BRN-05,Senior Sales Executive,fatima.abubakar@trademark-ng.com,09075598996,2019-03-22,Yes,1000000
+SP-010,Ibrahim Suleiman,Ibrahim,Suleiman,Abuja,BRN-05,Sales Executive,ibrahim.suleiman@trademark-ng.com,07032214176,2020-03-13,Yes,1000000
+SP-011,Maryam Garba,Maryam,Garba,Abuja,BRN-05,Account Manager,maryam.garba@trademark-ng.com,09076558135,2018-06-06,No,1500000
+SP-012,Bello Aliyu,Bello,Aliyu,Abuja,BRN-05,Sales Representative,bello.aliyu@trademark-ng.com,08053554558,2021-11-12,Yes,750000
+SP-013,Aliyu Danjuma,Aliyu,Danjuma,Abuja,BRN-05,Sales Executive,aliyu.danjuma@trademark-ng.com,07062274272,2021-08-21,Yes,500000
+SP-014,Musa Umar,Musa,Umar,Kano,BRN-08,Senior Sales Executive,musa.umar@trademark-ng.com,08039580709,2021-12-20,Yes,1000000
+SP-015,Hadiza Abdullahi,Hadiza,Abdullahi,Kano,BRN-08,Sales Executive,hadiza.abdullahi@trademark-ng.com,08052338802,2021-05-15,Yes,500000
+SP-016,Aminu Shehu,Aminu,Shehu,Kano,BRN-08,Sales Representative,aminu.shehu@trademark-ng.com,08051734162,2020-07-23,Yes,500000
+SP-017,Yusuf Wada,Yusuf,Wada,Kano,BRN-08,Sales Executive,yusuf.wada@trademark-ng.com,08051102798,2019-06-10,Yes,1000000
+SP-018,Ngozi Obi,Ngozi,Obi,Port Harcourt,BRN-10,Senior Sales Executive,ngozi.obi@trademark-ng.com,08121295068,2020-10-05,Yes,500000
+SP-019,Chukwuemeka Eze,Chukwuemeka,Eze,Port Harcourt,BRN-10,Account Manager,chukwuemeka.eze@trademark-ng.com,07036628763,2020-11-22,Yes,750000
+SP-020,Kelechi Chukwu,Kelechi,Chukwu,Port Harcourt,BRN-10,Sales Executive,kelechi.chukwu@trademark-ng.com,08112777584,2021-04-12,Yes,1500000
+SP-021,Victor Agboola,Victor,Agboola,Port Harcourt,BRN-10,Sales Representative,victor.agboola@trademark-ng.com,07035654943,2019-03-02,Yes,500000
+SP-022,Femi Ogundimu,Femi,Ogundimu,Ibadan,BRN-12,Senior Sales Executive,femi.ogundimu@trademark-ng.com,08057524013,2018-07-19,Yes,1500000
+SP-023,Toyin Fadipe,Toyin,Fadipe,Ibadan,BRN-12,Sales Executive,toyin.fadipe@trademark-ng.com,09075829996,2021-06-22,Yes,1000000
+SP-024,Kunle Salami,Kunle,Salami,Ibadan,BRN-12,Sales Representative,kunle.salami@trademark-ng.com,08163474661,2021-01-19,Yes,500000
+SP-025,Damilola Agbaje,Damilola,Agbaje,Ibadan,BRN-12,Sales Executive,damilola.agbaje@trademark-ng.com,07061939160,2020-10-29,Yes,750000

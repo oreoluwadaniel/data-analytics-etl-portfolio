@@ -1,0 +1,12 @@
+Metric,Value
+Source transaction rows,75000
+Clean reporting rows,74598
+Rows removed by cleaning,402
+Customers,3500
+Products,60
+Branches,13
+Regions,10
+Raw sales amount (NGN),6483758307.461902
+Completed-status sales amount (NGN),7638945136.817798
+Average discount,0.08561644235672423
+Latest source date,2026-09-17

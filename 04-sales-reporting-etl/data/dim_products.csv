@@ -1,0 +1,61 @@
+Product_ID,Product_Name,Category,Sub_Category,Standard_Price,Cost_Price,Stock_Quantity,Unit_Of_Measure,SKU,Is_Active
+PRD-001,HP Laptop 15s,Electronics,Computers & Laptops,379000,235855,45,Piece,TM-PRD-001,Yes
+PRD-002,Dell Inspiron 14,Electronics,Computers & Laptops,429000,224797,40,Piece,TM-PRD-002,Yes
+PRD-003,Lenovo ThinkPad E14,Electronics,Computers & Laptops,510000,287642,35,Piece,TM-PRD-003,Yes
+PRD-004,"Samsung 24"" Monitor",Electronics,Monitors & Displays,115000,63907,60,Piece,TM-PRD-004,Yes
+PRD-005,"LG 27"" 4K Monitor",Electronics,Monitors & Displays,185000,118000,45,Piece,TM-PRD-005,Yes
+PRD-006,Canon PIXMA Printer,Electronics,Printers & Scanners,89000,55916,50,Piece,TM-PRD-006,Yes
+PRD-007,HP LaserJet Pro,Electronics,Printers & Scanners,145000,96099,40,Piece,TM-PRD-007,Yes
+PRD-008,Epson EcoTank L3250,Electronics,Printers & Scanners,115000,61400,55,Piece,TM-PRD-008,Yes
+PRD-009,Logitech MX Master 3,Electronics,Peripherals,32000,18800,120,Piece,TM-PRD-009,Yes
+PRD-010,Microsoft Arc Mouse,Electronics,Peripherals,24000,12594,150,Piece,TM-PRD-010,Yes
+PRD-011,Logitech K380 Keyboard,Electronics,Peripherals,18500,10267,200,Piece,TM-PRD-011,Yes
+PRD-012,Rapoo E9050G Keyboard,Electronics,Peripherals,14000,8412,180,Piece,TM-PRD-012,Yes
+PRD-013,TP-Link Archer AX23 Router,Electronics,Networking,62000,32503,70,Piece,TM-PRD-013,Yes
+PRD-014,D-Link DIR-825 Router,Electronics,Networking,38000,20969,90,Piece,TM-PRD-014,Yes
+PRD-015,Logitech C920 Webcam,Electronics,Peripherals,42000,26207,80,Piece,TM-PRD-015,Yes
+PRD-016,Jabra Evolve2 Headset,Electronics,Audio,75000,45539,60,Piece,TM-PRD-016,Yes
+PRD-017,Samsung 1TB SSD,Electronics,Storage,58000,32206,100,Piece,TM-PRD-017,Yes
+PRD-018,Seagate 2TB External HDD,Electronics,Storage,38500,23650,120,Piece,TM-PRD-018,Yes
+PRD-019,UPS Powercom 650VA,Electronics,Power Solutions,28000,18186,80,Piece,TM-PRD-019,Yes
+PRD-020,Eaton 1500VA UPS,Electronics,Power Solutions,65000,33868,50,Piece,TM-PRD-020,Yes
+PRD-021,Ergonomic Office Chair,Furniture,Seating,85000,55159,30,Piece,TM-PRD-021,Yes
+PRD-022,Executive High-Back Chair,Furniture,Seating,145000,91597,20,Piece,TM-PRD-022,Yes
+PRD-023,Mesh Task Chair,Furniture,Seating,62000,35615,40,Piece,TM-PRD-023,Yes
+PRD-024,L-Shaped Office Desk,Furniture,Desks & Tables,120000,65385,25,Piece,TM-PRD-024,Yes
+PRD-025,Standing Desk Converter,Furniture,Desks & Tables,95000,63950,20,Piece,TM-PRD-025,Yes
+PRD-026,Executive Office Desk,Furniture,Desks & Tables,185000,106163,15,Piece,TM-PRD-026,Yes
+PRD-027,4-Drawer Filing Cabinet,Furniture,Storage & Filing,72000,38508,20,Piece,TM-PRD-027,Yes
+PRD-028,Steel Storage Cabinet,Furniture,Storage & Filing,95000,50870,15,Piece,TM-PRD-028,Yes
+PRD-029,Glass Top Conference Table,Furniture,Meeting Room,280000,183568,8,Piece,TM-PRD-029,Yes
+PRD-030,Whiteboard 1200x1800mm,Furniture,Meeting Room,42000,25897,30,Piece,TM-PRD-030,Yes
+PRD-031,Biro Pens (Box of 50),Office Supplies,Writing,3500,2272,500,Piece,TM-PRD-031,Yes
+PRD-032,A4 Paper (500 Sheets),Office Supplies,Paper Products,4200,2674,800,Piece,TM-PRD-032,Yes
+PRD-033,A4 Paper (2500 Sheets),Office Supplies,Paper Products,19500,11813,400,Piece,TM-PRD-033,Yes
+PRD-034,Stapler & Staples Set,Office Supplies,Desk Accessories,4800,3243,300,Piece,TM-PRD-034,Yes
+PRD-035,Scotch Tape (12 rolls),Office Supplies,Desk Accessories,3200,1858,400,Piece,TM-PRD-035,Yes
+PRD-036,File Folder A4 (Pack of 50),Office Supplies,Filing,6500,3954,350,Piece,TM-PRD-036,Yes
+PRD-037,Lever Arch File,Office Supplies,Filing,2800,1828,600,Piece,TM-PRD-037,Yes
+PRD-038,Permanent Marker Set 12,Office Supplies,Writing,4500,2785,400,Piece,TM-PRD-038,Yes
+PRD-039,Correction Fluid (6 pcs),Office Supplies,Writing,2400,1579,500,Piece,TM-PRD-039,Yes
+PRD-040,Scissors & Letter Opener Set,Office Supplies,Desk Accessories,3800,2327,300,Piece,TM-PRD-040,Yes
+PRD-041,HP 678 Ink Cartridge (Black),Consumables,Printer Ink & Toner,8500,5378,300,Piece,TM-PRD-041,Yes
+PRD-042,HP 678 Ink Cartridge (Colour),Consumables,Printer Ink & Toner,9200,4851,280,Piece,TM-PRD-042,Yes
+PRD-043,Canon PG-745 Cartridge,Consumables,Printer Ink & Toner,8800,4897,250,Piece,TM-PRD-043,Yes
+PRD-044,Epson T664 Ink Bottle Black,Consumables,Printer Ink & Toner,7500,4247,350,Piece,TM-PRD-044,Yes
+PRD-045,Epson T664 Ink Bottle Colour,Consumables,Printer Ink & Toner,8000,4262,320,Piece,TM-PRD-045,Yes
+PRD-046,Samsung MLT-D111S Toner,Consumables,Printer Ink & Toner,18500,10309,150,Piece,TM-PRD-046,Yes
+PRD-047,HP CF217A Toner Cartridge,Consumables,Printer Ink & Toner,22000,11796,120,Piece,TM-PRD-047,Yes
+PRD-048,CAT6 Cable (305m Roll),Electronics,Networking,38000,21450,40,Piece,TM-PRD-048,Yes
+PRD-049,8-Port Gigabit Switch,Electronics,Networking,32000,19895,60,Piece,TM-PRD-049,Yes
+PRD-050,16-Port Gigabit Switch,Electronics,Networking,58000,33546,35,Piece,TM-PRD-050,Yes
+PRD-051,Luminous 1.5KVA Inverter,Electronics,Power Solutions,185000,107157,20,Piece,TM-PRD-051,Yes
+PRD-052,Sukam 2KVA Inverter,Electronics,Power Solutions,245000,135613,15,Piece,TM-PRD-052,Yes
+PRD-053,Chloride Exide 200AH Battery,Electronics,Power Solutions,115000,64712,25,Piece,TM-PRD-053,Yes
+PRD-054,Quanta 200AH Battery,Electronics,Power Solutions,98000,65647,30,Piece,TM-PRD-054,Yes
+PRD-055,Nescafe Classic 200g,FMCG,Beverages,4800,2994,500,Piece,TM-PRD-055,Yes
+PRD-056,Milo 400g,FMCG,Beverages,5200,3211,450,Piece,TM-PRD-056,Yes
+PRD-057,Lipton Tea (100 sachets),FMCG,Beverages,3200,1752,600,Piece,TM-PRD-057,Yes
+PRD-058,Premier Indomie Carton (40pcs),FMCG,Food Items,8500,5412,400,Piece,TM-PRD-058,Yes
+PRD-059,Dettol Hand Sanitizer 500ml,FMCG,Hygiene,4500,2458,400,Piece,TM-PRD-059,Yes
+PRD-060,Ariel Washing Powder 3kg,FMCG,Cleaning,8800,5110,300,Piece,TM-PRD-060,Yes

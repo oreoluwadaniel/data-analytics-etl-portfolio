@@ -1,0 +1,14 @@
+Branch_ID,Branch_Name,Region_ID,Region,Address,Phone,Manager
+BRN-01,Lagos Island Branch,RGN-01,Lagos,"1 Broad Street, Lagos Island",08033000001,Olumide Fashola
+BRN-02,Ikeja Branch,RGN-01,Lagos,"45 Allen Avenue, Ikeja",08033000002,Titi Adesanya
+BRN-03,Victoria Island Branch,RGN-01,Lagos,"12 Ozumba Mbadiwe Ave, VI",08033000003,Emeka Okonkwo
+BRN-04,Lekki Branch,RGN-01,Lagos,"Plot 5, Lekki-Epe Expressway",08033000004,Sola Adeyemi
+BRN-05,Wuse II Branch,RGN-02,Abuja,"Plot 334 Aminu Kano Crescent, Wuse II",08033000005,Musa Abubakar
+BRN-06,Garki Branch,RGN-02,Abuja,"22 Gimbiya Street, Garki II",08033000006,Fatima Garba
+BRN-07,Maitama Branch,RGN-02,Abuja,"1 Aguiyi Ironsi Street, Maitama",08033000007,Ibrahim Suleiman
+BRN-08,Sabon Gari Branch,RGN-03,Kano,"32 Sokoto Road, Sabon Gari",08033000008,Ngozi Obi
+BRN-09,Nassarawa Branch,RGN-03,Kano,"14 Zaria Road, Nassarawa GRA",08033000009,Chukwuemeka Eze
+BRN-10,GRA Branch,RGN-04,Port Harcourt,"28 Peter Odili Road, GRA",08033000010,Bello Umar
+BRN-11,Rumuola Branch,RGN-04,Port Harcourt,"5 Rumuola Road, Rumuola",08033000011,Amina Dikko
+BRN-12,Bodija Branch,RGN-05,Ibadan,"7 Bodija Market Road, Bodija",08033000012,Femi Ogunleye
+BRN-13,Ring Road Branch,RGN-05,Ibadan,"2 Ring Road, Ibadan",08033000013,Taiwo Adekunle
