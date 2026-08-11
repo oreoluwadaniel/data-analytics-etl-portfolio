@@ -4,7 +4,7 @@ Four Excel/Power Query ETL builds. Each one takes a messy, real-world-shaped exp
 
 I'm a data analyst based in Lagos, Nigeria, working mostly in Excel, Power Query, Power Pivot, DAX, and VBA. The projects below use synthetic data, no real customer, employee, or company records, but the data-quality problems in them are ones I've actually run into on client and employer work: duplicate records, broken foreign keys, missing owners, numbers that don't reconcile until you track down the one row causing it.
 
-**Contact:** oluwafikayore@gmail.com
+**Contact:** danolatunji25@gmail.com
 
 ---
 
@@ -78,6 +78,6 @@ Every dataset in this repository is synthetic, built to resemble real operationa
 
 ## About me
 
-I'm Daniel Olatunji, a data analyst working across Excel, Power Query, Power BI, SQL, and Python, with a focus on data quality, ETL, and reporting automation for CRM, HR, inventory, and sales operations. If you're hiring for a data analyst, BI developer, or analytics engineer role and want to talk through any of these builds, including the parts that didn't work on the first try, reach me at **oluwafikayore@gmail.com**.
+I'm Daniel Olatunji, a data analyst working across Excel, Power Query, Power BI, SQL, and Python, with a focus on data quality, ETL, and reporting automation for CRM, HR, inventory, and sales operations. If you're hiring for a data analyst, BI developer, or analytics engineer role and want to talk through any of these builds, including the parts that didn't work on the first try, reach me at **danolatunji25@gmail.com**.
 
 See also: [Everdale Retail Analytics](https://github.com/oreoluwadaniel/everdale-retail-analytics) and [Kavora CRM Migration & Data Governance](https://github.com/oreoluwadaniel/kavora-crm-migration-data-governance).
