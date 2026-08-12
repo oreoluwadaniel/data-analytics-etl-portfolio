@@ -1,83 +1,72 @@
 # Data Analytics & ETL Portfolio - Daniel Olatunji
 
-Four Excel/Power Query ETL builds. Each one takes a messy, real-world-shaped export (CRM, HR, warehouse inventory, multi-branch sales) and turns it into a governed reporting model with data-quality controls built in from the start, not bolted on afterward.
+Four Excel and Power Query ETL projects. Each starts with a messy business export and turns it into a reporting model with checks for bad records, missing links, and numbers that do not reconcile.
 
-I'm a data analyst based in Lagos, Nigeria, working mostly in Excel, Power Query, Power Pivot, DAX, and VBA. The projects below use synthetic data, no real customer, employee, or company records, but the data-quality problems in them are ones I've actually run into on client and employer work: duplicate records, broken foreign keys, missing owners, numbers that don't reconcile until you track down the one row causing it.
+I'm a data analyst based in Lagos, Nigeria. I work mainly with Excel, Power Query, Power Pivot, DAX, SQL, and Python. The data here is synthetic, but the problems are common: duplicate records, broken keys, missing owners, and reports that look fine until you check the source row by row.
 
 **Contact:** danolatunji25@gmail.com
 
----
+## The four projects
 
-## What's in here
-
-| # | Project | Core problem | Scale | Stack |
+| # | Project | What it deals with | Scale | Stack |
 |---|---|---|---:|---|
-| 01 | [CRM Data Quality & Governance](01-crm-data-quality-governance/) | Score every customer record, flag the ones that need a human, don't auto-merge duplicates | 5,130 records, 30.3% routed to exceptions | Excel, Power Query, formula-driven scoring engine |
-| 02 | [HR Workforce ETL](02-hr-workforce-etl/) | Consolidate payroll, attendance, leave, and performance into one employee master without hiding the gaps | 1,001 employees, 301 without a review, 464 without a manager | Excel, Power Query, Power Pivot |
-| 03 | [Inventory ETL Automation](03-inventory-etl-automation/) | Turn a warehouse export into a prioritized replenishment view, backed by 15 automated integrity checks | 3,400 SKUs, N6.49B replenishment exposure identified | Excel, Power Query, VBA |
-| 04 | [Sales Reporting ETL](04-sales-reporting-etl/) | Consolidate 13 branches into a star-schema model an exec dashboard can actually trust | 75,000 transactions, 74,598 after cleaning, 13 branches | Excel, Power Query, Power Pivot, DAX, VBA |
+| 01 | [CRM Data Quality & Governance](01-crm-data-quality-governance/) | Score customer records, flag records that need review, and avoid automatic merges | 5,130 records, 30.3% routed to exceptions | Excel, Power Query |
+| 02 | [HR Workforce ETL](02-hr-workforce-etl/) | Bring payroll, attendance, leave, and performance into one employee view without hiding missing information | 1,001 employees, 301 without a review, 464 without a manager | Excel, Power Query, Power Pivot |
+| 03 | [Inventory ETL Automation](03-inventory-etl-automation/) | Turn warehouse data into a replenishment list backed by 15 integrity checks | 3,400 SKUs, N6.49B replenishment exposure | Excel, Power Query, VBA |
+| 04 | [Sales Reporting ETL](04-sales-reporting-etl/) | Combine 13 branches into a reporting model with checks before the numbers reach management | 75,000 transactions, 74,598 after cleaning | Excel, Power Query, Power Pivot, DAX, VBA |
 
-Each folder is a self-contained case study: the workbook, the source data, and a `docs/` folder with the architecture, the data dictionary, the data-quality findings, and (where relevant) a runbook for how to operate it.
+Each folder has the workbook, source data, and documentation covering the model, data fields, quality checks, and operating steps where needed.
 
----
+## What kept coming up
 
-## The thread connecting all four
+The same problem showed up in every department: **the numbers don't add up, and nobody knows why.**
 
-Every one of these started from the same complaint, just in a different department: "the numbers don't add up and nobody's sure why."
+CRM data can overstate a pipeline when duplicate leads are counted twice. HR reports become misleading when an employee without a review is treated as having a score of zero. Inventory reports become dangerous when negative stock is printed as if it were normal. Sales reports can include transactions that fall outside the reporting period.
 
-CRM data breaks pipeline reporting when duplicate leads inflate the funnel. HR data breaks headcount reporting when 301 employees have no performance review and someone reports their score as zero instead of "not reviewed." Inventory data breaks procurement planning when 51 SKUs show negative stock and the report just prints the number instead of flagging it. Sales data breaks executive reporting when 735 transactions are dated after the reporting period closed and nobody catches it before the numbers go into a deck.
-
-The fix takes the same shape every time, even though the domain changes:
+The workflow I used is simple:
 
 ```text
-Raw export -> profiling -> validation rules -> quality scoring -> exception routing -> governed reporting layer
+Raw export -> profile -> validate -> score problems -> route exceptions -> build reporting layer
 ```
 
-None of these four projects quietly "cleans" data by overwriting or deleting what looks wrong. Records that fail a rule get flagged, scored, and routed to a queue for a person to decide, because a duplicate CRM contact, a negative stock count, and a forward-dated sale all deserve a human decision, not a silent fix that might be wrong.
+I don't silently overwrite records just because they look wrong. A duplicate contact, negative stock balance, and future-dated sale are different problems. Each one needs to be checked before someone decides what to do with it.
 
----
+## What the projects show
 
-## What this demonstrates
+- Data-quality rules and exception queues
+- Star-schema and employee master data models
+- Power Query transformations and DAX measures
+- VBA refresh and audit steps
+- Data dictionaries, architecture notes, and quality findings
+- Clear documentation of cases where the first number was wrong or incomplete
 
-- **Data-quality engineering:** configurable rule engines, composite scoring, exception queues, and refresh logging, applied consistently across four different domains
-- **Data modeling:** star-schema design (facts/dimensions), employee master-record consolidation, foreign-key integrity checks
-- **Power Query & DAX:** multi-source ingestion, transformation, deduplication, and calculated measures for executive reporting
-- **VBA automation:** refresh orchestration and audit trails for the inventory and sales workbooks
-- **Documenting the messy parts:** every case study covers its own limitations and edge cases, like why 92 CRM records sit exactly at the exception threshold and don't get flagged, or why 735 sales transactions fall outside the stated reporting period, instead of presenting clean-looking numbers that fall apart under a follow-up question
+The point is not to make every report look clean. It is to know which numbers can be trusted, which need review, and why.
 
-Anyone can build a dashboard that looks polished. Knowing where your own numbers might mislead someone, and writing that down before they ask, is the part that's harder to fake.
-
----
-
-## How to explore a project
-
-Every project folder follows the same layout:
+## How each project is laid out
 
 ```text
 0X-project-name/
-|-- README.md              (the case study: problem, solution, results, business value)
-|-- workbook.xlsm/.xlsx    (the actual Excel/Power Query/VBA build)
-|-- data/                  (sanitized source and/or processed data)
+|-- README.md
+|-- workbook.xlsm/.xlsx
+|-- data/
 `-- docs/
-    |-- ARCHITECTURE.md          (the pipeline, end to end)
-    |-- CASE_STUDY.md            (business framing and findings)
-    |-- DATA_DICTIONARY.md       (field-level definitions)
-    |-- DATA_QUALITY_FINDINGS.md (what the quality checks actually caught)
-    `-- RUNBOOK.md               (how to operate the workbook, where applicable)
+    |-- ARCHITECTURE.md
+    |-- CASE_STUDY.md
+    |-- DATA_DICTIONARY.md
+    |-- DATA_QUALITY_FINDINGS.md
+    `-- RUNBOOK.md
 ```
 
-Start with the project README for the story, then open the workbook if you want to see the Power Query steps, the DAX measures, or the VBA behind the refresh button.
-
----
+Start with the project README, then open the workbook if you want to see the Power Query steps, DAX measures, or VBA refresh process.
 
 ## About the data
 
-Every dataset in this repository is synthetic, built to resemble real operational exports (CRM, payroll, warehouse, point-of-sale) without containing any real customer, employee, or company information. Where the source data includes intentional defects (duplicate IDs, missing fields, invalid formats, forward-dated records), that's by design. It's what makes the data-quality layer worth building in the first place.
-
----
+All datasets are synthetic. They are shaped like CRM, payroll, warehouse, and sales exports but contain no real customer, employee, or company records. The defects are intentional so the validation work can be tested.
 
 ## About me
 
-I'm Daniel Olatunji, a data analyst working across Excel, Power Query, Power BI, SQL, and Python, with a focus on data quality, ETL, and reporting automation for CRM, HR, inventory, and sales operations. If you're hiring for a data analyst, BI developer, or analytics engineer role and want to talk through any of these builds, including the parts that didn't work on the first try, reach me at **danolatunji25@gmail.com**.
+I'm Daniel Olatunji, a data analyst working across Excel, Power Query, Power BI, SQL, and Python. My main focus is data quality, ETL, and reporting systems for business operations.
+
+If you want to discuss any of these builds, including the parts I had to correct, reach me at **danolatunji25@gmail.com**.
 
 See also: [Everdale Retail Analytics](https://github.com/oreoluwadaniel/everdale-retail-analytics) and [Kavora CRM Migration & Data Governance](https://github.com/oreoluwadaniel/kavora-crm-migration-data-governance).
