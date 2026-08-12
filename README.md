@@ -1,72 +1,172 @@
-# Data Analytics & ETL Portfolio - Daniel Olatunji
+# Data Analytics & ETL Portfolio
 
-Four Excel and Power Query ETL projects. Each starts with a messy business export and turns it into a reporting model with checks for bad records, missing links, and numbers that do not reconcile.
+**Four business-focused Excel and Power Query projects that turn messy operational exports into controlled, reviewable reporting systems.**
 
-I'm a data analyst based in Lagos, Nigeria. I work mainly with Excel, Power Query, Power Pivot, DAX, SQL, and Python. The data here is synthetic, but the problems are common: duplicate records, broken keys, missing owners, and reports that look fine until you check the source row by row.
+A spreadsheet can produce a polished dashboard and still be wrong.
 
-**Contact:** danolatunji25@gmail.com
+A duplicate customer can inflate a CRM pipeline. A missing manager can distort a workforce report. Negative stock can hide an inventory problem. A future-dated sale can make revenue look stronger than it is.
 
-## The four projects
+These projects focus on the part that happens before the dashboard: **getting the data into a state where the numbers can actually be trusted.**
 
-| # | Project | What it deals with | Scale | Stack |
-|---|---|---|---:|---|
-| 01 | [CRM Data Quality & Governance](01-crm-data-quality-governance/) | Score customer records, flag records that need review, and avoid automatic merges | 5,130 records, 30.3% routed to exceptions | Excel, Power Query |
-| 02 | [HR Workforce ETL](02-hr-workforce-etl/) | Bring payroll, attendance, leave, and performance into one employee view without hiding missing information | 1,001 employees, 301 without a review, 464 without a manager | Excel, Power Query, Power Pivot |
-| 03 | [Inventory ETL Automation](03-inventory-etl-automation/) | Turn warehouse data into a replenishment list backed by 15 integrity checks | 3,400 SKUs, N6.49B replenishment exposure | Excel, Power Query, VBA |
-| 04 | [Sales Reporting ETL](04-sales-reporting-etl/) | Combine 13 branches into a reporting model with checks before the numbers reach management | 75,000 transactions, 74,598 after cleaning | Excel, Power Query, Power Pivot, DAX, VBA |
-
-Each folder has the workbook, source data, and documentation covering the model, data fields, quality checks, and operating steps where needed.
-
-## What kept coming up
-
-The same problem showed up in every department: **the numbers don't add up, and nobody knows why.**
-
-CRM data can overstate a pipeline when duplicate leads are counted twice. HR reports become misleading when an employee without a review is treated as having a score of zero. Inventory reports become dangerous when negative stock is printed as if it were normal. Sales reports can include transactions that fall outside the reporting period.
-
-The workflow I used is simple:
+The common workflow is:
 
 ```text
-Raw export -> profile -> validate -> score problems -> route exceptions -> build reporting layer
+Raw business data
+      ↓
+Profile & validate
+      ↓
+Identify data issues
+      ↓
+Route exceptions
+      ↓
+Transform & model
+      ↓
+Build reporting layer
+      ↓
+Decision-ready information
 ```
 
-I don't silently overwrite records just because they look wrong. A duplicate contact, negative stock balance, and future-dated sale are different problems. Each one needs to be checked before someone decides what to do with it.
+---
 
-## What the projects show
+## The Four Projects
 
-- Data-quality rules and exception queues
-- Star-schema and employee master data models
-- Power Query transformations and DAX measures
-- VBA refresh and audit steps
-- Data dictionaries, architecture notes, and quality findings
-- Clear documentation of cases where the first number was wrong or incomplete
+| #      | Project                                                          | Business Problem                                                                                       |                   Scale |
+| ------ | ---------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------ | ----------------------: |
+| **01** | [CRM Data Quality & Governance](01-crm-data-quality-governance/) | Identify unreliable customer records and route them for review before they affect sales reporting      |       **5,130 records** |
+| **02** | [HR Workforce ETL](02-hr-workforce-etl/)                         | Combine payroll, attendance, leave and performance data without hiding missing employee information    |     **1,001 employees** |
+| **03** | [Inventory ETL Automation](03-inventory-etl-automation/)         | Turn warehouse data into a controlled replenishment process and identify stock exposure                |          **3,400 SKUs** |
+| **04** | [Sales Reporting ETL](04-sales-reporting-etl/)                   | Combine 13 branch datasets into one reporting model with validation before management sees the numbers | **75,000 transactions** |
 
-The point is not to make every report look clean. It is to know which numbers can be trusted, which need review, and why.
+Each project includes the source data, workbook, transformation logic, data-quality checks, documentation and operating instructions where required.
 
-## How each project is laid out
+---
+
+## What These Projects Solve
+
+### CRM
+
+**Problem:** Duplicate and incomplete customer records can distort pipeline and customer reporting.
+
+**Solution:** Score records, identify exceptions and separate records requiring human review from records that can safely continue through the process.
+
+**Result:** **30.3% of 5,130 records were routed for exception handling.**
+
+---
+
+### HR
+
+**Problem:** Payroll, attendance, leave and performance information often sits in separate files, making it difficult to build one reliable employee view.
+
+**Solution:** Combine the datasets into a controlled employee model while keeping missing information visible instead of replacing it with misleading values.
+
+**Result:** **301 employees had no performance review and 464 had no recorded manager.**
+
+Those are not zeros. They are management exceptions.
+
+---
+
+### Inventory
+
+**Problem:** Warehouse reports can show stock levels without telling the business which products actually require action.
+
+**Solution:** Transform inventory data into a replenishment view backed by **15 integrity checks**, including stock and master-data validation.
+
+**Result:** **3,400 SKUs with N6.49B in replenishment exposure.**
+
+The purpose is not simply to show inventory. It is to identify where purchasing attention is required.
+
+---
+
+### Sales
+
+**Problem:** Branch-level sales files can contain inconsistent records, making consolidated reporting unreliable.
+
+**Solution:** Standardize and combine **13 branches** into a single reporting model with validation checks before the data reaches management.
+
+**Result:** **75,000 source transactions reduced to 74,598 valid reporting records after cleaning.**
+
+Every excluded record has a reason.
+
+---
+
+## The Principle Behind the Work
+
+I do not treat data cleaning as "make the spreadsheet look right."
+
+A bad record should not quietly disappear.
+
+A duplicate, missing owner, negative stock balance and future-dated transaction represent different business problems. They should be identified, classified and handled differently.
+
+That is why these projects use:
+
+* Data profiling and validation
+* Exception queues
+* Power Query transformations
+* Power Pivot data models
+* DAX measures
+* VBA refresh and audit processes
+* Data dictionaries and quality documentation
+* Reconciliation checks before reporting
+
+The objective is simple:
+
+> **Know which numbers are safe to use, which need review, and why.**
+
+---
+
+## What This Portfolio Demonstrates
+
+**Data quality:** Finding problems before they reach management reports.
+
+**ETL:** Turning inconsistent business exports into repeatable reporting datasets.
+
+**Data modeling:** Building structured models that support reliable analysis instead of repeated manual manipulation.
+
+**Reporting:** Connecting cleaned data to meaningful business measures.
+
+**Governance:** Keeping exceptions visible instead of silently changing or deleting questionable records.
+
+**Automation:** Reducing repetitive refresh and validation work through Power Query and VBA.
+
+---
+
+## Repository Structure
 
 ```text
 0X-project-name/
-|-- README.md
-|-- workbook.xlsm/.xlsx
-|-- data/
-`-- docs/
-    |-- ARCHITECTURE.md
-    |-- CASE_STUDY.md
-    |-- DATA_DICTIONARY.md
-    |-- DATA_QUALITY_FINDINGS.md
-    `-- RUNBOOK.md
+├── README.md
+├── workbook.xlsm / workbook.xlsx
+├── data/
+└── docs/
+    ├── ARCHITECTURE.md
+    ├── CASE_STUDY.md
+    ├── DATA_DICTIONARY.md
+    ├── DATA_QUALITY_FINDINGS.md
+    └── RUNBOOK.md
 ```
 
-Start with the project README, then open the workbook if you want to see the Power Query steps, DAX measures, or VBA refresh process.
+Start with each project README for the business problem and findings. Open the workbook to inspect the transformations, data model, DAX measures and automation.
 
-## About the data
+---
 
-All datasets are synthetic. They are shaped like CRM, payroll, warehouse, and sales exports but contain no real customer, employee, or company records. The defects are intentional so the validation work can be tested.
+## Data
 
-## About me
+All datasets are synthetic.
 
-I'm Daniel Olatunji, a data analyst working across Excel, Power Query, Power BI, SQL, and Python. My main focus is data quality, ETL, and reporting systems for business operations.
+They are deliberately structured to resemble CRM, HR, inventory and sales exports, including the kinds of inconsistencies that require validation before reporting. No real customer, employee or company records are included.
 
-If you want to discuss any of these builds, including the parts I had to correct, reach me at **danolatunji25@gmail.com**.
+---
 
-See also: [Everdale Retail Analytics](https://github.com/oreoluwadaniel/everdale-retail-analytics) and [Kavora CRM Migration & Data Governance](https://github.com/oreoluwadaniel/kavora-crm-migration-data-governance).
+## About
+
+**Daniel Olatunji**
+Data Analyst | ETL | Data Quality | Business Reporting
+
+I build reporting and data workflows that help businesses move from disconnected operational files to information they can actually use to make decisions.
+
+**Contact:** [danolatunji25@gmail.com](mailto:danolatunji25@gmail.com)
+
+Also see:
+
+* [Everdale Retail Analytics](https://github.com/oreoluwadaniel/everdale-retail-analytics)
+* [Kavora CRM Migration & Data Governance](https://github.com/oreoluwadaniel/kavora-crm-migration-data-governance)
