@@ -1,5 +1,4 @@
-# Enterprise Inventory ETL — Case Study
-
+# Enterprise Inventory ETL 
 ## Business challenge
 
 Inventory reporting becomes unreliable when warehouse exports contain conflicting quantities, missing master-data fields, expired items, and inconsistent operational flags.
