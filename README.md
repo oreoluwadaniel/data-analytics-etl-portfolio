@@ -156,17 +156,3 @@ All datasets are synthetic.
 They are deliberately structured to resemble CRM, HR, inventory and sales exports, including the kinds of inconsistencies that require validation before reporting. No real customer, employee or company records are included.
 
 ---
-
-## About
-
-**Daniel Olatunji**
-Data Analyst | ETL | Data Quality | Business Reporting
-
-I build reporting and data workflows that help businesses move from disconnected operational files to information they can actually use to make decisions.
-
-**Contact:** [danolatunji25@gmail.com](mailto:danolatunji25@gmail.com)
-
-Also see:
-
-* [Everdale Retail Analytics](https://github.com/oreoluwadaniel/everdale-retail-analytics)
-* [Kavora CRM Migration & Data Governance](https://github.com/oreoluwadaniel/kavora-crm-migration-data-governance)
